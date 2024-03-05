@@ -100,19 +100,19 @@
                     <label for="hak_akses">Hak Akses</label>
                     <select name="hak_akses" class="form-control" required>
                         <?php
-                            if($kolom['hak_akses']==1){
-                                echo "<option value='1'>Adminstrator</option>";    
+                            if($kolom['hak_akses']=="admin"){
+                                echo "<option value='admin'>Adminstrator</option>";    
                             }
-                            if($kolom['hak_akses']==2){
-                                echo "<option value='2'>Kasir</option>";    
+                            if($kolom['hak_akses']=="kasir"){
+                                echo "<option value='kasir'>Kasir</option>";    
                             }
-                            if($kolom['hak_akses']==3){
-                                echo "<option value='3'>Purchasing</option>";    
+                            if($kolom['hak_akses']=="petugas"){
+                                echo "<option value='petugas'>Purchasing</option>";    
                             }
                         ?>
-                        <option value="1">Adminstrator</option>
-                        <option value="2">Kasir</option>
-                        <option value="3">Pembelian</option>
+                        <option value="admin">Adminstrator</option>
+                        <option value="kasir">Kasir</option>
+                        <option value="petugas">Pembelian</option>
                     </select>
                 
             </div>
@@ -171,9 +171,9 @@
                     <label for="hak_akses">Hak Akses</label>
                     <select name="hak_akses" class="form-control" required>
                         <option value="">-- Pilih Hak Akses --</option>
-                        <option value="1">Adminstrator</option>
-                        <option value="2">Kasir</option>
-                        <option value="3">Pembelian</option>
+                        <option value="admin">Adminstrator</option>
+                        <option value="kasir">Kasir</option>
+                        <option value="petugas">Pembelian</option>
                     </select>
                 
             </div>

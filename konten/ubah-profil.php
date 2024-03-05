@@ -46,19 +46,19 @@
             <label for="hak_akses">Hak Akses</label>
             <select name="hak_akses" class="form-control">
                 <?php
-                    if($_SESSION['hak_akses']==1){
-                        echo "<option value='1'>Administrator</option>";
+                    if($_SESSION['hak_akses']=="admin"){
+                        echo "<option value='admin'>Administrator</option>";
                     }
-                    if($_SESSION['hak_akses']==2){
-                        echo "<option value='2'>Kasir</option>";
+                    if($_SESSION['hak_akses']=="kasir"){
+                        echo "<option value='kasir'>Kasir</option>";
                     }
-                    if($_SESSION['hak_akses']==3){
-                        echo "<option value='3'>Purchasing</option>";
+                    if($_SESSION['hak_akses']=="petugas"){
+                        echo "<option value='petugas'>Purchasing</option>";
                     }
                 ?>
-                <option value="1">Administrator</option>
-                <option value="2">Kasir</option>
-                <option value="3">Purchasing</option>
+                <option value="admin">Administrator</option>
+                <option value="kasir">Kasir</option>
+                <option value="petugas">Purchasing</option>
             </select>
 
             <button class="btn btn-info btn-block mt-3 mb-3" type="submit">Update</button>
